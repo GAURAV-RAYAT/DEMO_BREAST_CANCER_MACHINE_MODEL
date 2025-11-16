@@ -1,8 +1,8 @@
 import streamlit as st
 import numpy as np
-import pickle
+import joblib
 
-model = pickle.load(open("model.pkl", "rb"))
+model = joblib.load("model.pkl")
 
 st.title("ML Model Deployment using Streamlit")
 
